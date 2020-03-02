@@ -6,6 +6,7 @@ import { API_URL } from '../helpers/apiurl'
 import { initEditProfile } from '../actions'
 
 class Profile extends React.Component {
+    
     onBtnEditProfilePress = () => { 
         this.props.initEditProfile(this.props.user)
         this.props.navigation.navigate('EditProfile')
